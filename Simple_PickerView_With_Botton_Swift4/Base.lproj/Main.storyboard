@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simple_PickerView_With_Botton_Swift4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cW6-j3-2u9">
+                                <rect key="frame" x="16" y="201" width="343" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.5284231906526029" blue="0.42345265333062387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Select Your Name">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VXM-gj-Ih0"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-iu-I44">
+                                <rect key="frame" x="0.0" y="505" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="4Un-Dy-jYh"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9396354236292801" blue="0.73195537812524203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sea-iu-I44" firstAttribute="top" secondItem="cW6-j3-2u9" secondAttribute="bottom" constant="246" id="0Dr-9L-qxZ"/>
+                            <constraint firstItem="Sea-iu-I44" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2mB-N6-59U"/>
+                            <constraint firstItem="cW6-j3-2u9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="181" id="981-eZ-fOU"/>
+                            <constraint firstItem="Sea-iu-I44" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="99E-cO-ol4"/>
+                            <constraint firstItem="cW6-j3-2u9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ViJ-Hk-ArO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cW6-j3-2u9" secondAttribute="trailing" constant="16" id="rqJ-vp-iw7"/>
+                            <constraint firstItem="Sea-iu-I44" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xHP-0V-Xgd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Btn" destination="cW6-j3-2u9" id="Vv3-3h-xWn"/>
+                        <outlet property="PickerView" destination="Sea-iu-I44" id="rOi-oc-gfN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
